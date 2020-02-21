@@ -1,3 +1,83 @@
-form {
-    width: 50%;
+body {
+    font-family: Arial;
+    padding-top: 100px;
+}
+
+.navbar {
+    background-image: -webkit-linear-gradient(#081116, #020608 60%, #030708);
+    background-image: -o-linear-gradient(#04090c, #050b0f 60%, #03080a);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#07151d), color-stop(60%, #010303), to(#07151d));
+    background-image: linear-gradient(#0a4569, #09161d 60%, #2f779e);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    border-bottom: 1px solid #178acc;
+    -webkit-filter: none;
+    filter: none;
+    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    border-color: #010a0f;
+}
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ededed;
+    color: #A9A9A9;
+}
+
+.icon-bar {
+    background-color: #fff;
+}
+
+.accountform {
+    padding-top: 20px;
+}
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
+}
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+caption p {
+    word-wrap: break-word;
+}
+
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.panel-default {
+    border-color: transparent;
+    padding: 0 10px;
+}
+
+.panel-body {
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+.product-description {
+    min-height: 40px;
+}
+.navbar {
+    background-color: black;
 }
