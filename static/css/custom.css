@@ -1,6 +1,7 @@
 body {
     font-family: Arial;
     padding-top: 100px;
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -93,4 +94,18 @@ footer {
 }
 .display input[type=text] {
     border: solid 1px #010303;
+    border-radius: 10px;
+    outline: none;
+    width: 50%;
+}
+button, input, optgroup, select, textarea {
+    color: rgb(245, 244, 247);
+    font: inherit;
+    margin: 0;
+    border: solid 1px #010303;
+}
+button {
+     background-color: rgb(0, 149, 248);
+     border-radius: 10px;
+     outline: none;
 }
