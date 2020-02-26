@@ -3,7 +3,7 @@ body {
     padding-top: 100px;
     background-color: rgb(255, 255, 255);
 }
-
+/*--------------------------------------------Navbar*/
 .navbar {
     background-image: -webkit-linear-gradient(#081116, #020608 60%, #030708);
     background-image: -o-linear-gradient(#04090c, #050b0f 60%, #03080a);
@@ -40,6 +40,8 @@ body {
     background-color: #c67605;
 }
 
+/*--------------------------------------------Products*/
+
 .product {
     background-size: contain;
     background-position: center center;
@@ -72,23 +74,8 @@ caption p {
 .product-description {
     min-height: 40px;
 }
-footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ededed;
-    color: rgb(247, 241, 241);
-    background-image: -webkit-linear-gradient(#081116, #020608 60%, #030708);
-    background-image: -o-linear-gradient(#04090c, #050b0f 60%, #03080a);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#07151d), color-stop(60%, #010303), to(#07151d));
-    background-image: linear-gradient(#0a4569, #09161d 60%, #2f779e);
-    background-repeat: no-repeat;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-}
+/*--------------------------------------------Search Bar*/
+
 .display {
     text-align: center;
 }
@@ -108,6 +95,8 @@ button {
      border-radius: 10px;
      outline: none;
 }
+/*--------------------------------------------Sign In/ Register Form*/
+
 legend {
     display: block;
     width: 100%;
@@ -118,6 +107,25 @@ legend {
     color: #2701fd;
     border: 0;
     border-bottom: 1px solid #e5e5e5;
+}
+/*--------------------------------------------Footer*/
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ededed;
+    color: rgb(247, 241, 241);
+    background-image: -webkit-linear-gradient(#081116, #020608 60%, #030708);
+    background-image: -o-linear-gradient(#04090c, #050b0f 60%, #03080a);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#07151d), color-stop(60%, #010303), to(#07151d));
+    background-image: linear-gradient(#0a4569, #09161d 60%, #2f779e);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
 }
 
 .list-inline-item i {
