@@ -93,13 +93,12 @@ footer {
     text-align: center;
 }
 .display input[type=text] {
-    border: solid 1px #010303;
     border-radius: 10px;
     outline: none;
     width: 50%;
 }
 button, input, optgroup, select, textarea {
-    color: rgb(245, 244, 247);
+    color: rgb(4, 0, 10);
     font: inherit;
     margin: 0;
     border: solid 1px #010303;
