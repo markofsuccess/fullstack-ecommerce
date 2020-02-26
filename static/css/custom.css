@@ -87,6 +87,10 @@ footer {
     left: 0;
     right: 0;
     height: 50px;
-    
-    
+}
+.display {
+    text-align: center;
+}
+.display input[type=text] {
+    border: solid 1px #010303;
 }
