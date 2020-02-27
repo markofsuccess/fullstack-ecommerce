@@ -107,7 +107,7 @@ legend {
     width: 50%;
 }
 button, input, optgroup, select, textarea {
-    color: rgb(243, 241, 245);
+    color: rgb(7, 6, 8);
     font: inherit;
     margin: 0;
     border: solid 1px #010303;
@@ -122,8 +122,9 @@ button {
     -webkit-filter: none;
     filter: none;
     border-bottom: 1px solid #178acc;
-     border-radius: 10px;
-     outline: none;
+    border-radius: 10px;
+    outline: none;
+    color:rgb(255, 255, 255);
 }
 /*--------------------------------------------Footer*/
 
