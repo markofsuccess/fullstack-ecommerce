@@ -3,7 +3,7 @@ body {
     padding-top: 100px;
     background-color: rgb(255, 255, 255);
 }
-/*--------------------------------------------Navbar*/
+/*--------------------------------------------Navbar &Log In/register forms*/
 .navbar {
     background-image: -webkit-linear-gradient(#081116, #020608 60%, #030708);
     background-image: -o-linear-gradient(#04090c, #050b0f 60%, #03080a);
@@ -74,6 +74,28 @@ caption p {
 .product-description {
     min-height: 40px;
 }
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #2701fd;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.btn-primary {
+    background-image: -webkit-linear-gradient(#54b4eb, #0e1f29 60%, #1d9ce5);
+    background-image: -o-linear-gradient(#54b4eb, #0e1316 60%, #1d9ce5);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #0b0e0f), to(#1d9ce5));
+    background-image: linear-gradient(#54b4eb, #13191d 60%, #1d9ce5);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    -webkit-filter: none;
+    filter: none;
+    border-bottom: 1px solid #178acc;
+}
 /*--------------------------------------------Search Bar*/
 
 .display {
@@ -85,28 +107,23 @@ caption p {
     width: 50%;
 }
 button, input, optgroup, select, textarea {
-    color: rgb(4, 0, 10);
+    color: rgb(243, 241, 245);
     font: inherit;
     margin: 0;
     border: solid 1px #010303;
 }
 button {
-     background-color: rgb(0, 149, 248);
+    background-image: -webkit-linear-gradient(#54b4eb, #0e1f29 60%, #1d9ce5);
+    background-image: -o-linear-gradient(#54b4eb, #0e1316 60%, #1d9ce5);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb), color-stop(60%, #0b0e0f), to(#1d9ce5));
+    background-image: linear-gradient(#54b4eb, #13191d 60%, #1d9ce5);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    -webkit-filter: none;
+    filter: none;
+    border-bottom: 1px solid #178acc;
      border-radius: 10px;
      outline: none;
-}
-/*--------------------------------------------Sign In/ Register Form*/
-
-legend {
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: inherit;
-    color: #2701fd;
-    border: 0;
-    border-bottom: 1px solid #e5e5e5;
 }
 /*--------------------------------------------Footer*/
 
