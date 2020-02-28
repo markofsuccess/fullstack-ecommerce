@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% load static from staticfiles %} {% load bootstrap_tags %} {% block head_js %}
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
-{% endblock %} {% block content %} {% for product_detail in details %}
+{% endblock %} {% block content %} {% for product_details in details %}
 <div class="product-detail-image">
     <img class="materialboxed product-img" alt="Smartphone" src="{{ MEDIA_URL }}{{ product_details.image }}">
 </div>
@@ -13,7 +13,7 @@
     <h1>Memory: {{ product.memory }}</h1>
 </div>
 <div class="return">
-    <form method="post" action="{% url 'products' %}">
+    <form method="post" action="{% url 'index' %}">
         {% csrf_token %}
         <div class="return">
             <button class="btn btn-warning btn-lg" type="submit">Return</button>
