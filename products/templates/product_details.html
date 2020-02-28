@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% load static from staticfiles %} {% load bootstrap_tags %} {% block head_js %}
+<script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
+{% endblock %} {% block content %} {% for product_detail in details %}
+<div class="product-detail-image">
+    <img class="materialboxed product-img" alt="Smartphone" src="{{ MEDIA_URL }}{{ product_details.image }}">
+</div>
+{% endfor %}
+<div class="product_details">
+    <h1>Brand: {{ product.brand }}</h1>
+    <h1>Model: {{ product.model }}</h1>
+    <h1>Year: {{ product.year }}</h1>
+    <h1>Price: {{ product.price }}</h1>
+    <h1>Memory: {{ product.memory }}</h1>
+</div>
+<div class="return">
+    <form method="post" action="{% url 'products' %}">
+        {% csrf_token %}
+        <div class="return">
+            <button class="btn btn-warning btn-lg" type="submit">Return</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
