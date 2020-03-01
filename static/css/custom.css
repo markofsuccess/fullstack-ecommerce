@@ -2,6 +2,8 @@ body {
     font-family: Arial;
     padding-top: 100px;
     background-color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 100vh;
 }
 /*--------------------------------------------Navbar &Log In/register forms*/
 .navbar {
@@ -96,6 +98,18 @@ legend {
     filter: none;
     border-bottom: 1px solid #178acc;
 }
+p {
+    margin: 0 10px;
+}
+
+.panel {
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+}
 /*--------------------------------------------Search Bar*/
 
 .display {
@@ -125,38 +139,6 @@ button {
     border-radius: 10px;
     outline: none;
     color:rgb(255, 255, 255);
-}
-/*--------------------------------------------Footer*/
-
-footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top: 1px solid #ededed;
-    color: rgb(247, 241, 241);
-    background-image: -webkit-linear-gradient(#081116, #020608 60%, #030708);
-    background-image: -o-linear-gradient(#04090c, #050b0f 60%, #03080a);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#07151d), color-stop(60%, #010303), to(#07151d));
-    background-image: linear-gradient(#0a4569, #09161d 60%, #2f779e);
-    background-repeat: no-repeat;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width:100%;
-    height: 50px;
-}
-
-.list-inline-item i {
-    font-size: 2.5em;
-    color: white;
-    letter-spacing: 30px;
-    text-align: center;
-}
-.list-inline {
-    padding-left: 0;
-    list-style: none;
-    margin-left: 25px;
 }
 /*--------------------------------------------Carousel & Images*/
 .image {
@@ -196,6 +178,7 @@ footer {
     -moz-osx-font-smoothing: grayscale;
     color:#0a4569
 }
+/*--------------------------------------------Product Details*/
 .btn-lg, .btn-group-lg>.btn {
     padding: 14px 16px;
     font-size: 16px;
@@ -208,4 +191,32 @@ footer {
 .btn-details {
     font-size: 22px;
     width: 18%;
+}
+/*--------------------------------------------Footer*/
+
+footer {
+    border-top: 1px solid #ededed;
+    color: rgb(247, 241, 241);
+    background-image: -webkit-linear-gradient(#081116, #020608 60%, #030708);
+    background-image: -o-linear-gradient(#04090c, #050b0f 60%, #03080a);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#07151d), color-stop(60%, #010303), to(#07151d));
+    background-image: linear-gradient(#0a4569, #09161d 60%, #2f779e);
+    background-repeat: no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+}
+.list-inline-item i {
+    font-size: 2em;
+    color: white;
+    letter-spacing: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin-left: 25px;
 }
