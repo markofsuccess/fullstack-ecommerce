@@ -74,7 +74,8 @@ caption p {
 }
 
 .product-description {
-    min-height: 40px;
+    min-height: 30px;
+    font-weight: bold;
 }
 legend {
     display: block;
@@ -100,6 +101,7 @@ legend {
 }
 p {
     margin: 0 10px;
+    font-weight: bold;
 }
 
 .panel {
