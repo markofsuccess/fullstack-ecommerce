@@ -2,7 +2,7 @@
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %} {% block content %} {% for product_details in details %}
 <div class="product-detail-image">
-    <img class="materialboxed product-img" alt="Smartphone" src="{{ MEDIA_URL }}{{ product_details.image }}">
+    <img class="product-img" alt="Smartphone" src="{{ MEDIA_URL }}{{ product_details.image }}">
 </div>
 {% endfor %}
 <div class="product_details">

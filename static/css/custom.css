@@ -222,3 +222,12 @@ footer {
     list-style: none;
     margin-left: 25px;
 }
+.product-img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-bottom: 5%;
+    border: 1px solid;
+}
