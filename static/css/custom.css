@@ -194,6 +194,17 @@ button {
     font-size: 22px;
     width: 18%;
 }
+/*--------------------------------------------Product_details Images*/
+
+.product-img{
+    
+    height: 200px;
+    float: right;
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-bottom: 5%;
+    border: 1px solid;
+}
 /*--------------------------------------------Footer*/
 
 footer {
@@ -222,12 +233,18 @@ footer {
     list-style: none;
     margin-left: 25px;
 }
-.product-img{
-    width: 200px;
-    height: 200px;
-    float: right;
-    margin-top: 5%;
-    margin-left: 10px;
-    margin-bottom: 5%;
-    border: 1px solid;
+/*--------------------------------------------Media Queries*/
+@media screen and (min-width: 1140px) {
+  .container-carousel{
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-carousel{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+  }
 }
