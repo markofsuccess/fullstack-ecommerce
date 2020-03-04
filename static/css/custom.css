@@ -249,14 +249,8 @@ footer {
   }
 }
 @media screen and (max-width: 414px) {
-   .input-group-details{
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 414px) {
    .btn-details{
     margin-bottom: 60px;
-    margin-top: 30px;
     width: 50%;
   }
 }
@@ -264,4 +258,8 @@ footer {
    .form-control-details{
     width: 50%;
   }
+}
+.btn,
+.btn-success {
+    margin-bottom: 50px;
 }

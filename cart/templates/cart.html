@@ -22,7 +22,7 @@
                         <label for="exampleInputAmount" class="sr-only">New Qty</label>
                         <div class="input-group">
                             <div class="input-group-addon">Qty</div>
-                            <input name="quantity" type="number" min="1" max="999" class="form-control" required>
+                            <input name="quantity" type="number" min="0" max="999" class="form-control" required>
                             <div class="input-group-addon">{{item.quantity}}</div>
                         </div>
                     </div>
@@ -33,9 +33,9 @@
     </div>
     {% endfor %}
 </div>
-<div class="row">
-    <h2>Total</h2>
-    <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
+<div class="row" style="text-align:center;>
+    <h2 class="text-center">Total</h2>
+    <p class="text-center"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</p>
     <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
 </div>
 
