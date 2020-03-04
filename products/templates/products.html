@@ -57,8 +57,7 @@
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
                 <h3>{{ product.name }}</h3>
-                <p class="product-description">{{ product.description }}</p>
-                <p>{{ product.price }}</p>
+                <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ product.price }}</p>
 
                 <form method="post" action="{% url 'details' product.id %}">
                     {% csrf_token %}
