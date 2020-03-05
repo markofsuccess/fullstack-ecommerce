@@ -198,7 +198,7 @@ button {
 }
 .btn-details {
     font-size: 22px;
-    width: 41%;
+    width: 30%;
 }
 .btn-success {
     margin-bottom: 50px;
@@ -209,7 +209,7 @@ button {
 /*--------------------------------------------Product_details Images*/
 
 .product-img{
-    height: 220px;
+    height: 225px;
     float: right;
     margin-top: 5%;
     margin-left: 10px;
@@ -279,10 +279,11 @@ footer {
 .product-img{
     height: 100%;
     width: 100%;
-    float: right;
-    margin-top: 5%;
-    margin-left: 10px;
-    margin-bottom: 5%;
-    border: 1px solid;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.product-img{
+    height: 220px;
+    width: 240px;
   }
 }
