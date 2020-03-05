@@ -202,6 +202,9 @@ button {
 }
 .btn-success {
     margin-bottom: 50px;
+    display: flex; 
+    justify-content: center;
+    width: 50%%;
 }
 .input-group {
     margin-bottom: -35px;
@@ -216,6 +219,12 @@ button {
     margin-bottom: 5%;
     border: 1px solid;
 }
+/*--------------------------------------------Checkout Page*/
+
+#submit_payment_btn {
+    margin-bottom: 40px;
+}
+
 /*--------------------------------------------Footer*/
 
 footer {
