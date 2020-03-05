@@ -98,6 +98,7 @@ legend {
     -webkit-filter: none;
     filter: none;
     border-bottom: 1px solid #178acc;
+    margin-top: 33px;
 }
 p {
     margin: 0 10px;
@@ -249,7 +250,7 @@ footer {
 @media screen and (min-width: 768px) {
   .container-carousel{
     width: 70%;
-    height: 70%;
+    height: 60%;
     margin: 0 auto;
   }
 }
