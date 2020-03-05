@@ -1,100 +1,97 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
 
-{% block content %}
+<div class="container-carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
 
-<div class="container-carousel"> 
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-    </ol>
-    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div>
+                    <h2 class="text-center">Samsung Galaxy S10 - 128 GB - Black</h2>
+                </div>
+                <img src="media/images/Samsung-s10.png" alt="Samsung Galaxy s10" style="width:100%;">
+            </div>
+            <div class="item">
+                <div>
+                    <h2 class="text-center">Apple iPhone 11 - 128GB - Black</h2>
+                </div>
+                <img src="media/images/Iphone11.png" alt="APPLE iPhone 11" style="width:100%;">
+            </div>
+            <div class="item">
+                <div>
+                    <h2 class="text-center">Huawei P30 - 128GB - Breathing Crystal</h2>
+                </div>
+                <img src="media/images/Huawei-p30.png" alt="Huawei p30" style="width:100%;">
+            </div>
+            <div class="item">
+                <div>
+                    <h2 class="text-center">Apple iPhone XR - 64 GB</h2>
+                </div>
+                <img src="media/images/iphone_xr.png" alt="APPLE iPhone XR" style="width:100%;">
+            </div>
+            <div class="item">
+                <div>
+                    <h2 class="text-center">Nokia 7.2 - 128 GB</h2>
+                </div>
+                <img src="media/images/NOKIA-7.png" alt="Nokia 7" style="width:100%;">
+            </div>
+            <div class="item">
+                <div>
+                    <h2 class="text-center">Google Pixel 4 - 64 GB</h2>
+                </div>
+                <img src="media/images/google_pixel4.png" alt="Google Pixel 4" style="width:100%;">
+            </div>
+        </div>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-      <div>
-      <h2 class="text-center">Samsung Galaxy S10 - 128 GB - Black</h2>
-      </div>
-        <img src="media/images/Samsung-s10.png" alt="Samsung Galaxy s10" style="width:100%;">
-      </div>
-      <div class="item">
-      <div>
-      <h2 class="text-center">Apple iPhone 11 - 128GB - Black</h2>
-      </div>
-        <img src="media/images/Iphone11.png" alt="APPLE iPhone 11" style="width:100%;">
-      </div>
-      <div class="item">
-      <div>
-      <h2 class="text-center">Huawei P30 - 128GB - Breathing Crystal</h2>
-      </div>
-        <img src="media/images/Huawei-p30.png" alt="Huawei p30" style="width:100%;">
-      </div>
-      <div class="item">
-      <div>
-      <h2 class="text-center">Apple iPhone XR - 64 GB</h2>
-      </div>
-        <img src="media/images/iphone_xr.png" alt="APPLE iPhone XR" style="width:100%;">
-      </div>
-      <div class="item">
-      <div>
-      <h2 class="text-center">Nokia 7.2 - 128 GB</h2>
-      </div>
-        <img src="media/images/NOKIA-7.png" alt="Nokia 7" style="width:100%;">
-      </div>
-      <div class="item">
-      <div>
-      <h2 class="text-center">Google Pixel 4 - 64 GB</h2>
-      </div>
-        <img src="media/images/google_pixel4.png" alt="Google Pixel 4" style="width:100%;">
-      </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
 </div>
 <h2 class="text-center">Best Sellers</h2>
 <!-- Products -->
 <div class="row row-flex">
     {% for product in products %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
-            <div class="panel-body">
-                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+        <div class="panel-body">
+            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
-                <h3>{{ product.name }}</h3>
-                <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ product.price }}</p>
+            <h3>{{ product.name }}</h3>
+            <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ product.price }}</p>
 
-                <form method="post" action="{% url 'details' product.id %}">
-                    {% csrf_token %}
-                    <div class="center">
-                        <button class="btn btn-primary btn-sm" type="submit">More details</button>
-                    </div>
-                </form>
+            <form method="post" action="{% url 'details' product.id %}">
+                {% csrf_token %}
+                <div class="center">
+                    <button class="btn btn-primary btn-sm" type="submit">More details</button>
+                </div>
+            </form>
 
-                <form method="post" action="{% url 'add_to_cart' product.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="0" max="999" class="form-control" placeholder="Quantity" required>
-                        <span class="input-group-btn">
+            <form method="post" action="{% url 'add_to_cart' product.id %}">
+                {% csrf_token %}
+                <div class="input-group">
+                    <input name="quantity" type="number" min="0" max="999" class="form-control" placeholder="Quantity" required>
+                    <span class="input-group-btn">
                             <button class="btn btn-success" type="submit">Add</button>
                         </span>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
+    </div>
     {% endfor %}
 </div>
 {% endblock %}

@@ -6,26 +6,28 @@
 </div>
 {% endfor %}
 <div class="product_details">
-    <h1>Name: {{ product.name }}</h1>
-    <h2>Description:</h2><p>{{ product.description }}</p>
-    <h3>Price:</h3><p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ product.price }}</p>
+    <h1 class="text-center">Name: {{ product.name }}</h1>
+    <h2 class="text-center">Description:</h2>
+    <p class="text-center">{{ product.description }}</p>
+    <h3 class="text-center">Price:</h3>
+    <p class="text-center"><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ product.price }}</p>
 </div>
 <div class="return">
     <form method="post" action="{% url 'index' %}">
         {% csrf_token %}
         <div class="return">
-            <button class="btn btn-primary btn-lg continue" type="submit">Continue Shopping</button>
+            <button class="btn btn-primary btn-lg continue" type="submit" style="text-align:center;">Continue Shopping</button>
         </div>
     </form>
 </div>
-    <form method="post" action="{% url 'add_to_cart' product.id %}">
-        {% csrf_token %}
-        <div class="input-group-details">
-            <input name="quantity" type="number" min="0" max="999" class="form-control-details" placeholder="Quantity" required>
-                <span class="input-group-btn">
+<form method="post" action="{% url 'add_to_cart' product.id %}">
+    {% csrf_token %}
+    <div class="input-group-details">
+        <input name="quantity" type="number" min="0" max="999" class="form-control-details" placeholder="Quantity" required>
+        <span class="input-group-btn">
             <button class="btn-details btn-success" type="submit">Add</button>
                 </span>
-        </div>
-     </form>
- 
+    </div>
+</form>
+
 {% endblock %}
