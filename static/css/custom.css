@@ -184,15 +184,21 @@ button {
 /*--------------------------------------------Product Details*/
 .btn-lg, .btn-group-lg>.btn {
     padding: 14px 16px;
-    line-height: 1.3333333;
+    line-height: 1.1333333;
     border-radius: 6px;
+    width: 30%;
+    margin-bottom: 5px;
 }
 .form-control-details {
-    width: 18%;
+    width: 30%;
+    line-height: 2.1333333;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    background-color: rgb(214, 240, 175);
 }
 .btn-details {
     font-size: 22px;
-    width: 18%;
+    width: 41%;
 }
 .btn-success {
     margin-bottom: 50px;
@@ -203,8 +209,7 @@ button {
 /*--------------------------------------------Product_details Images*/
 
 .product-img{
-    
-    height: 200px;
+    height: 220px;
     float: right;
     margin-top: 5%;
     margin-left: 10px;
@@ -257,16 +262,27 @@ footer {
 @media screen and (max-width: 414px) {
    .btn-details{
     margin-bottom: 60px;
-    width: 50%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 414px) {
    .form-control-details{
-    width: 50%;
+    width: 70%;
   }
 }
 @media screen and (max-width: 414px) {
     .btn-lg, .btn-group-lg>.btn {
-    width: 50%;
-  {
+    width: 70%;
+   }
+}
+@media screen and (max-width: 414px) {
+.product-img{
+    height: 100%;
+    width: 100%;
+    float: right;
+    margin-top: 5%;
+    margin-left: 10px;
+    margin-bottom: 5%;
+    border: 1px solid;
+  }
 }
