@@ -93,6 +93,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 #       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #   }
 #}
+
 DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 
 # Password validation
@@ -137,6 +138,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+AWS_STORAGE_BUCKET_NAME = 'fullstack-ecommerce-markus'
 AWS_S3_REGION_NAME = 'eu-west-1'
 
 
