@@ -220,7 +220,7 @@ The website is for visitors who are intrested in smartphones and purchasing smar
 
 Travis Joblog:
 
-![Screenshot](travis joblog.png)
+![Screenshot](travis_joblog.png)
 
 ## Bugs
 
