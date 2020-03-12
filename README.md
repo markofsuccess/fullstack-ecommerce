@@ -331,19 +331,19 @@ To deploy the project to Heroku, complete the following:
 
     Key                     < Value >
 
-AWS_ACCESS_KEY_ID	    < your access key >
+    AWS_ACCESS_KEY_ID	    < your access key >
 
-AWS_SECRET_ACCESS_KEY	< your secret key >
+    AWS_SECRET_ACCESS_KEY	< your secret key >
 
-DATABASE_URL	        < your postgres database url >
+    DATABASE_URL	        < your postgres database url >
 
-SECRET_KEY	            < your secret key >
+    SECRET_KEY	            < your secret key >
 
-STRIPE_PUBLISHABLE	    < your secret key >
+    STRIPE_PUBLISHABLE	    < your secret key >
 
-STRIPE_SECRET	        < your secret key >
+    STRIPE_SECRET	        < your secret key >
 
-DISABLE_COLLECTSTATIC   <1>
+    DISABLE_COLLECTSTATIC   <1>
 
 10. Add your postgress database url to your env.py file:
 
