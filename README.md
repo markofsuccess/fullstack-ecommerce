@@ -325,12 +325,13 @@ To deploy the project to Heroku, complete the following:
 
         Key	                  Value
 
-AWS_ACCESS_KEY_ID	    <your secret key>
+AWS_ACCESS_KEY_ID	    <your access key>
 AWS_SECRET_ACCESS_KEY	<your secret key>
 DATABASE_URL	        <your postgres database url>
 SECRET_KEY	            <your secret key>
 STRIPE_PUBLISHABLE	    <your secret key>
 STRIPE_SECRET	        <your secret key>
+DISABLE_COLLECTSTATIC   <1>
 
 9. From the command line of your local IDE:
 
@@ -341,7 +342,7 @@ STRIPE_SECRET	        <your secret key>
 
 11. Dont forget to add your Heroku app url to the settings.py file:
 
-ALLOWED HOSTS = ['your_heroku_app_name_url']
+    ALLOWED HOSTS = ['your_heroku_app_name_url']
 
 12. In the Django Admin panel - log in with your superuser account and create new products and product images.
 
