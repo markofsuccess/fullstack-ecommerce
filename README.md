@@ -329,9 +329,10 @@ To deploy the project to Heroku, complete the following:
 
 9. Set the following config vars:
 
-    Key                     Value
+    Key                     < Value >
 
 AWS_ACCESS_KEY_ID	    < your access key >
+
 AWS_SECRET_ACCESS_KEY	< your secret key >
 
 DATABASE_URL	        < your postgres database url >
