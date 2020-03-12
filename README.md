@@ -317,44 +317,49 @@ To deploy the project to Heroku, complete the following:
     git commit -m "you commit message"
     git push origin master
 
-4. Create an app in your Heroku dashboard. Choose a unique name, and choose the region where you would like your app         located.
+4. Create an app in your Heroku dashboard. Choose a unique name, and choose the region where you would like your app located.
 
 5. In your apps dashboard, click the "Deploy" tab, look for "Deployment Method" section and select Github.
 
 6. Select your Github repository that you have just pushed to.
 
-7. Click the "Settings" tab, and look for "Config Vars" section and click the "Reveal Config Vars" section.
+7. Click the "Resources" tab, look for "Add-ons" section and add a Heroku Postgres - Hobby Dev database to your app. Copy the 
 
-8. Set the following config vars:
+8. Click the "Settings" tab, and look for "Config Vars" section and click the "Reveal Config Vars" section.
+
+9. Set the following config vars:
 
     Key                     Value
 
-AWS_ACCESS_KEY_ID	    <your access key>
+AWS_ACCESS_KEY_ID	    < your access key >
+AWS_SECRET_ACCESS_KEY	< your secret key >
 
-AWS_SECRET_ACCESS_KEY	<your secret key>
+DATABASE_URL	        < your postgres database url >
 
-DATABASE_URL	        <your postgres database url>
+SECRET_KEY	            < your secret key >
 
-SECRET_KEY	            <your secret key>
+STRIPE_PUBLISHABLE	    < your secret key >
 
-STRIPE_PUBLISHABLE	    <your secret key>
-
-STRIPE_SECRET	        <your secret key>
+STRIPE_SECRET	        < your secret key >
 
 DISABLE_COLLECTSTATIC   <1>
 
-9. From the command line of your local IDE:
+10. Add your postgress database url to your env.py file:
+
+    os.environ.setdefault("DATABASE_URL", "postgres://your postgres url")
+
+11. From the command line of your local IDE:
 
 * Migrate the database models
 * Create your superuser account in your new database
 
-10. In your Heroku dashboard - click the "Deploy" tab, go down to the "Manual Deploy" section, select the master branch of your repo, and "Deploy Branch".
+12. In your Heroku dashboard - click the "Deploy" tab, go down to the "Manual Deploy" section, select the master branch of your repo, and "Deploy Branch".
 
-11. Dont forget to add your Heroku app url to the settings.py file:
+13. Dont forget to add your Heroku app url to the settings.py file:
 
     ALLOWED HOSTS = ['your_heroku_app_name_url']
 
-12. In the Django Admin panel - log in with your superuser account and create new products and product images.
+14. In the Django Admin panel - log in with your superuser account and create new products and product images.
 
 # Credits
 
