@@ -3,13 +3,19 @@
 
 # Executive Summary of The Website
 
-The last milestone project for my school [Code Insitute](https://codeinstitute.net/). A Full-Stack Django Frameworks ecommerce site where users can browse for smartphones and make an order if the want with Stripe payment option integrated. You can try and make an order by registering as an user and at the checkout form you can put in the card number 4242424242424242 and 123 as the CVV number. Databases are stored with Postgres and SQlite. Stripe Test API is used for this project as no real products are sold. See the live site [here](https://django-markus-ecommerce.herokuapp.com/)
+The last milestone project for my school [Code Insitute](https://codeinstitute.net/). A Full-Stack Django Frameworks ecommerce site where users can browse for smartphones and make an order if they want with Stripe payment option integrated. Adding products and product images are through the Django Admin Panel as the superuser.
+
+You can try and make an order by registering as an user and at the checkout form you can put in the card number 4242424242424242 and 123 as the CVV number. 
+
+Databases are stored with Postgres and SQlite. Stripe Test API is used for this project as no real products are sold. 
+
+See the live site [here](https://django-markus-ecommerce.herokuapp.com/)
 
 ## The Goal & Purpose of The Website
 
 ### The Goal
 
-* The End Goal of the website is to sell smartphones and make it an easy and simple way for the customer to do so.
+* The End Goal of the website is for the shopowner to sell smartphones and earn money from it. The webshop has  a wide range of smartphones ranging from newer models that cost more to older models that are little cheaper. Integrated with Stripe payment solution for making purchases easy and secure for both customer and the shopowner.
 
  There are many smartphones on the page, the customer can inspect each and one of them by clicking on more details to see specifications and pictures of each smartphone. There the customer can choose to add the product to the cart by pressin add to cart or press continue shopping if he/she wants to continue browsing other smartphones.
 
@@ -17,27 +23,27 @@ The last milestone project for my school [Code Insitute](https://codeinstitute.n
 
 ### Purpose
 
-* The purpose of the website is to show how with Django frameworks, Python and Stripe API you can create an fully functional e-commerce site where the business owner can host their ecommerce shop with an secure  and well known payment processor as Stripe.
+* The purpose of the website is to show how with Django frameworks, Python and Stripe API you can create an fully functional e-commerce site where the business owner can host their ecommerce shop with an secure and well known payment processor as Stripe.
 
 # UX
 
 The website is for visitors who are intrested in smartphones and purchasing smartphones.
 
-* As a user, I want to know more about a specific smartphone and its specifications by pressing on    the more details button. And by pressing on each product image, the image is zoomed in to make it   larger.
+* As a user, I want to know more about a specific smartphone and its specifications by pressing on    the more details button. And by pressing on each product image, the image is zoomed in to make it larger.
 
 * As a user, I want to search the site for a specific smartphone that I'm intrested in.
 
-* As a user, I can register an unique profile with a unique profile name by clicking on the           register icon in the navbar.
+* As a user, I can register an unique profile with a unique profile name by clicking on the register icon in the navbar.
 
-* As s user, I can choose between logging in with my username or email address by clicking on the     login button in the navbar.
+* As s user, I can choose between logging in with my username or email address by clicking on the login button in the navbar.
 
-* As a user, I want to make an secure payment with a well known and secure payment provider as        Stripe.
+* As a user, I want to make an secure payment with a well known and secure payment provider as Stripe.
 
-* As a user, I want to be able to ammend a product if I regret adding it to the cart, by pressing     the ammend button in the cart page.
+* As a user, I want to be able to ammend a product if I regret adding it to the cart, by pressing the ammend button in the cart page.
 
-* As a user, I can retrieve the password to my profile if I forgot it by pressing on the forgot my    password link in the login page.
+* As a user, I can retrieve the password to my profile if I forgot it by pressing on the forgot my password link in the login page.
 
-* As a user, I can see how much a product costs, all prices of each product are specified in Euro     under each item, and at the checkout you can see the total amount stated in Euro.
+* As a user, I can see how much a product costs, all prices of each product are specified in Euro under each item, and at the checkout you can see the total amount stated in Euro.
 
 * As a user, I can add a product to the cart by choosing the quantity and pressin on the add button.
 
@@ -48,7 +54,7 @@ The website is for visitors who are intrested in smartphones and purchasing smar
 
 ## Design
 
-* The design is a simple with all content & products on 1 page. The navbar has register, login and    cart icons. The smartphone logo takes you back to the homepage. There is a search bar where users   can search for items. Added carousel images of different smartphones making it more interactive     for the user. The footer has icons of all the payments details avaiable on the page.
+* The design is a simple with all content & products on 1 page. The navbar has register, login and cart icons. The smartphone logo takes you back to the homepage. There is a search bar where users   can search for items. Added carousel images of different smartphones making it more interactive for the user. The footer has icons of all the payments details avaiable on the page.
 
 ## Mockup
 
@@ -83,69 +89,50 @@ The website is for visitors who are intrested in smartphones and purchasing smar
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 
 * [CSS3](https://developer.mozilla.org/en-US/docs/Archive/CSS3)
-- Boostrap was used mainly to make the website responsive on multiple devices using bootstrap grid.   
-* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- Stripe JavaScript was used to render the payment processing.
 
-* [Gitpod](https://www.gitpod.io/)
-- Gitpod was the platform used to code the whole project with.
+* [Boostrap](https://getbootstrap.com/) was used mainly to make the website responsive on multiple devices using bootstrap grid.   
 
-* [jQuery](https://jquery.com/)
-- The project uses JQuery to simplify DOM manipulation.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) Stripe JavaScript was used to render the payment processing.
 
-* [Github](https://github.com/)
-- Github was used to document the project progress.
+* [Gitpod](https://www.gitpod.io/) Gitpod was the IDE used to code the whole project with.
 
-* [HTML Validator](https://validator.w3.org/)
-- This was used to validate the HTML code.
+* [jQuery](https://jquery.com/) The project uses JQuery to simplify DOM manipulation.
 
-* [HTML Formatter](https://htmlformatter.com/)
-- This was used for formatting the HTMl code.
+* [Github](https://github.com/) Github was used to document the project progress.
 
-* [Stripe](https://stripe.com/)
-- Stripe is used for to make payments securely on any products on the page.
+* [HTML Validator](https://validator.w3.org/) This was used to validate the HTML code.
 
-* [Materialize](https://materializecss.com/)
-- Materialize was used for the materialize box image class, when pressing on the product details      images to    increase the size of it.
+* [HTML Formatter](https://htmlformatter.com/) This was used for formatting the HTMl code.
 
-* [Postgres](https://www.postgresql.org/)/ [Sqlite3](https://www.sqlite.org/index.html)
-- These were used for storing Databases.
+* [Stripe](https://stripe.com/) Stripe is used for to make payments securely on any products on the page.
 
-* [Heroku](www.heroku.com)
-- Heroku was used for hosting the web page.
+* [Materialize](https://materializecss.com/) Materialize was used for the materialize box image class, when pressing on the product details images to increase the size of it.
 
-* [Django](https://www.djangoproject.com/)
-- Django frameworks were used for this project.
+* [Postgres](https://www.postgresql.org/)/ [Sqlite3](https://www.sqlite.org/index.html) These were used for storing Databases.
 
-* [Python3](https://www.python.org/)
-- Python3 was used for this project.
+* [Heroku](www.heroku.com) Heroku was used for hosting the web page.
 
-* [Font Awesome](https://fontawesome.com/)
-- Font Awesome was used to style the fonts/icons of the page.
+* [Django](https://www.djangoproject.com/) Django frameworks were used for this project.
 
-* [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools)
-- Google Chrome Devtools was used for inspecting webpage for any errors and used for designing the    page in a faster way.
+* [Python3](https://www.python.org/) Python3 was the main language used for this project.
 
-* [AWS](aws.amazon.com/)
-‎- Amazon Web Services was used to host the media and static files for the project.
+* [Font Awesome](https://fontawesome.com/) Font Awesome was used to style the fonts/icons of the page.
 
-* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
-- Creation, configuration and management of AWS S3 Bucket.
+* [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools) Google Chrome Devtools was used for inspecting webpage for any errors and used for designing the page in a faster way.
+
+* [AWS](aws.amazon.com/) Amazon Web Services was used to host the media and static files for the project.
+
+* [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) Creation, configuration and management of AWS S3 Bucket.
 ‎
-* [Gunicorn](https://pypi.org/project/gunicorn/)
-- Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX to assist the deployment of Django   projects to Heroku.
+* [Gunicorn](https://pypi.org/project/gunicorn/) Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX to assist the deployment of Django projects to Heroku.
 
-* [Pip](https://pip.pypa.io/en/stable/installing/)
-- Used to install tools for the project.
+* [Pip](https://pip.pypa.io/en/stable/installing/) Used to install tools for the project.
 
-* [Pillow](https://pillow.readthedocs.io/en/stable/)
-- Python image library to help process images files to store in databases.
+* [Pillow](https://pillow.readthedocs.io/en/stable/) Python image library to help process images files to store in databases.
 
-* django-forms-bootstrap
-- This was used for styling Django Forms.
+* django-forms-bootstrap This was used for styling Django Forms.
 
-* [psycopg2](https://pypi.org/project/psycopg2/) 
-- Psycopg the most popular PostgreSQL database adapter was used for Python.
+* [psycopg2](https://pypi.org/project/psycopg2/) Psycopg the most popular PostgreSQL database adapter was used for Python.
 
 # Testing
 
@@ -180,10 +167,10 @@ The website is for visitors who are intrested in smartphones and purchasing smar
 ## Registration & Login
 
 * Created multiple accounts and used the Django admin panel to see if users have been registered.
-* After Register and logging in there should pop up a green message either "you have succssfully      registered" or "you have successfully logged in". 
+* After Register and logging in there should pop up a green message either "you have succssfully registered" or "you have successfully logged in". 
 * Click on the profile icon to see what email address you are logged in with.
 * Once registered and logged in you can proceed to the checkout form.
-* If not logged in you can add items to the cart but you can't proceed to the checkout without        logging in.
+* If not logged in you can add items to the cart but you can't proceed to the checkout without logging in.
 * You can succesfully log in with both username and email.
 
 ## Log out
@@ -193,9 +180,15 @@ The website is for visitors who are intrested in smartphones and purchasing smar
 
 ## Reset Password Function
 
+* Go to login - Click forgot your password - Receive message "We've e-mailed you instructions for setting your password to the e-mail address you submitted. You should be receiving it shortly."
+
+* Check email account if email received - See picture below for successful email sent:
+
+![Screenshot](password.png)
+
 ## Products
 
-* If trying to click add on a product without specifying quantity - pop up with this field is         required.
+* If trying to click add on a product without specifying quantity - pop up with this field is required.
 * When clicking on more details button - redirected succsfully to that item page.
 * In the product details page - you need to specify amount in order to add to cart. 
 * When clicked on continue shopping - gets redirected to products page.
@@ -208,7 +201,7 @@ The website is for visitors who are intrested in smartphones and purchasing smar
 * At the checout form, if any field is missing and you try to submit payment, pop up messsage with    fil in this field is required.
 * Amend a item in the cart by choosing quantity 1 to delete item from cart.
 * In the Django Admin Panel - Checkout - Orders to see all succesful orders registered.
-* Once filled in the checkout form and clicked submit payment, a pop up message with "You have        succesfully paid" shows up. Also checked my Stripe dashboard for succesful payments. See            picture below:
+* Once filled in the checkout form and clicked submit payment, a pop up message with "You have succesfully paid" shows up. Also checked my Stripe dashboard for succesful payments. See picture below:
 
 ![Screenshot](stripe.png)
 
@@ -224,7 +217,7 @@ Travis Joblog:
 
 ## Bugs
 
-* After doing a search or submit payment it redirects to products page but carousel images not        displaying.
+* After doing a search or submit payment it redirects to products page but carousel images not displaying.
 
 ## Code Validators
 
@@ -233,6 +226,29 @@ Travis Joblog:
 # Deployment
 
 * App is running and hosted live on [Heroku](https://django-markus-ecommerce.herokuapp.com/)
+
+## Email Settings for resetting password
+
+1. In settings.py 
+
+EMAIL_USE_TLS = True
+
+EMAIL_HOST = 'smtp.gmail.com'
+
+EMAIL_HOST_USER = os.environ.get("EMAIL_ADDRESS")
+
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+
+EMAIL_PORT = 587
+
+2. In your env.py file 
+
+os.environ.setdefault("EMAIL_ADDRESS", "your_email@gmail.com")
+os.environ.setdefault("EMAIL_PASSWORD", "your_password")
+
+3. In your Gmail account settings - You need to turn ON allow access for less secure apps. If you have 2 step authentication you need to turn that off. Recommended using a new gmail account instead of your main.
+
+4. Go to Heroku Dashboard - Settings - Config Vars - And set the EMAIL_ADDRESS as the key and its value < your_email > and the same with EMAIL_PASSWORD as the key and the value < your_password>.
 
 ## Steps to Deployment
 
@@ -371,6 +387,6 @@ To deploy the project to Heroku, complete the following:
 
 ## Aknowledgements
 
-* Thanks to all the great tutors on Code institute for being a great support through the entire       course, without your great support and tips it would probably take 5 years for me to complete the   course :D
+* Thanks to all the great tutors on Code institute for being a great support through the entire course, without your great support and tips it would probably take 5 years for me to complete the course :D
 * Thanks to my Mentor Antonia Simic for helping me with the projects.
-* Thanks to my school [Code Institute](https://codeinstitute.net/) for creating a great Full-Stack    Developer Education.
+* Thanks to my school [Code Institute](https://codeinstitute.net/) for creating a great Full-Stack Developer Education.
