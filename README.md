@@ -277,15 +277,15 @@ To allow you to access all functionality on the site locally, ensure you have cr
 
 3. Create a env.py file and set up environment variables:
 
-    os.environ.setdefault('SECRET_KEY', <key here>)
+    os.environ.setdefault('SECRET_KEY', "your key here")
 
-    os.environ.setdefault('STRIPE_PUBLISHABLE', <key here>)
+    os.environ.setdefault('STRIPE_PUBLISHABLE', "your key here")
 
-    os.environ.setdefault('STRIPE_SECRET', <key here>)
+    os.environ.setdefault('STRIPE_SECRET', "your key here")
 
-    os.environ.setdefault('AWS_ACCESS_KEY_ID', <key here>)
+    os.environ.setdefault('AWS_ACCESS_KEY_ID', "your key here")
 
-    os.environ.setdefault('AWS_SECRET_ACCESS_KEY', <key here>)
+    os.environ.setdefault('AWS_SECRET_ACCESS_KEY', "your key here")
 
 4. Add the env.py to .gitignore file with command:
     echo env.py >> .gitignore
