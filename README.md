@@ -244,6 +244,7 @@ EMAIL_PORT = 587
 2. In your env.py file 
 
 os.environ.setdefault("EMAIL_ADDRESS", "your_email@gmail.com")
+
 os.environ.setdefault("EMAIL_PASSWORD", "your_password")
 
 3. In your Gmail account settings - You need to turn ON allow access for less secure apps. If you have 2 step authentication you need to turn that off. Recommended using a new gmail account instead of your main.
